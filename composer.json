@@ -1,0 +1,34 @@
+{
+    "name": "lukaswhite/laravel-email-checker",
+    "description": "Check e-mail addresses to see if they're disposable, or issued by free providers",
+    "require": {
+        "illuminate/support": "^8.74",
+        "illuminate/console": "^8.74",
+        "lukaswhite/email-checker": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lukaswhite\\LaravelEmailChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lukas White",
+            "email": "hello@lukaswhite.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lukaswhite\\LaravelEmailChecker\\LaravelEmailCheckerServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/lukaswhite/email-checker"
+        }
+    ]
+}
