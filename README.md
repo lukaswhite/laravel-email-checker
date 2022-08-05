@@ -1,6 +1,8 @@
 # Laravel E-mail Checker
 
-A Laravel package for checking e-mail addresses; to see if they've been issued by a provider of free/throwaway/disposable addresses, or are on a domain that's been blacklisted. Useful to try to combat spam and fake accounts.
+A Laravel package for checking e-mail addresses; to see if they've been issued by a provider of free/throwaway/disposable addresses, or are on a domain that's been blacklisted. 
+
+You may find it useful to try to combat spam and fake accounts; it ought to be straightforward to integrate it into the registration process.
 
 ## Usage
 
@@ -11,6 +13,8 @@ By default, it'll put them in a directory named `email-checker` on your local di
 ```bash
 php artisan vendor:publish --provider="Lukaswhite\LaravelEmailChecker\LaravelEmailCheckerServiceProvider" 
 ```
+
+Alternatively, simply add an entry to your `.env` file named `EMAIL_CHECKER_DIRECTORY`.
 
 Then simply run the following command:
 
