@@ -5,19 +5,18 @@ namespace Lukaswhite\LaravelEmailChecker;
 
 use Illuminate\Support\Facades\Facade;
 use Lukaswhite\EmailChecker\Checker;
+use Lukaswhite\EmailChecker\Email;
 
 /**
- * @method static string getUuid()
- * @method static mixed withinBatch(\Closure $callback)
- * @method static void startBatch()
- * @method static void setBatch(string $uuid): void
- * @method static bool isOpen()
- * @method static void endBatch()
+ * @method static Email check(string $email)
  *
  * @see \Lukaswhite\EmailChecker\Checker
  */
 class LaravelEmailChecker extends Facade
 {
+    /**
+     * @return string
+     */
     protected static function getFacadeAccessor(): string
     {
         return Checker::class;

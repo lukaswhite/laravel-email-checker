@@ -26,7 +26,6 @@ class LaravelEmailCheckerServiceProvider extends ServiceProvider
 
         $this->mergeConfigFrom( $configPath, 'email-checker' );
 
-
         $this->commands(Install::class);
         $this->commands(Update::class);
 

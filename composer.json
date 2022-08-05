@@ -1,6 +1,6 @@
 {
     "name": "lukaswhite/laravel-email-checker",
-    "description": "Check e-mail addresses to see if they're disposable, or issued by free providers",
+    "description": "A Laravel package that checks e-mail addresses to see if they're disposable, are on a domain that's been blacklisted or from a provider of free addresses",
     "require": {
         "illuminate/support": "^8.74",
         "illuminate/console": "^8.74",

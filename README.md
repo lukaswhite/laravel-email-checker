@@ -1,6 +1,6 @@
 # Laravel E-mail Checker
 
-A Laravel package for checking e-mail addresses; to see if they've been issued by a provider of free/throwaway/disposable addresses. Useful to try to combat spam and fake accounts.
+A Laravel package for checking e-mail addresses; to see if they've been issued by a provider of free/throwaway/disposable addresses, or are on a domain that's been blacklisted. Useful to try to combat spam and fake accounts.
 
 ## Usage
 
@@ -29,9 +29,9 @@ $result = LaravelEmailChecker::check('spammer@spammy.spam');
 This returns an object with the following methods:
 
 ```php
-$result->isDisposable();
-$result->isFree();
-$result->isBlacklisted();
+$result->isDisposable(); // true|false
+$result->isFree(); // true|false
+$result->isBlacklisted(); // true|false
 ```
 
 ## Updating the Data
